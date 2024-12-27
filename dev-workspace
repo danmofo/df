@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+i3-msg workspace number 1
+spotify &
+sleep 1
+i3-msg move workspace to output DP-1
+
+i3-msg workspace number 6
+google-chrome &
+sleep 2
+i3-msg move workspace to output DP-1
+
+i3-msg workspace number 7
+/usr/bin/konsole &
+sleep 2
+i3-msg move workspace to output DP-0
+
+i3-msg workspace number 8
+code &
+sleep 2
+i3-msg move workspace to output DP-0
+
+i3-msg workspace number 9
+idea &
+sleep 3
+i3-msg move workspace to output DP-0
+
+i3-msg workspace number 10
+obsidian &
+sleep 2
+i3-msg move workspace to output DP-0
