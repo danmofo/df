@@ -6,36 +6,42 @@ dell_second_monitor="DP-2"
 samsung_primary_monitor="DP-0"
 
 i3-msg workspace number 1
+i3-msg 'rename workspace 1 to 1: music'
 spotify &
 sleep 2
 i3-msg move workspace to output $dell_second_monitor
 sleep 1
 
-i3-msg workspace number 6
+i3-msg workspace number 2
+i3-msg 'rename workspace 2 to 2: browser'
 google-chrome &
 sleep 2
 i3-msg move workspace to output $dell_second_monitor
 sleep 1
 
 i3-msg workspace number 7
+i3-msg 'rename workspace 7 to 7: terminal'
 /usr/bin/konsole &
 sleep 2
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
 i3-msg workspace number 8
+i3-msg 'rename workspace 8 to 8: text editor'
 code &
 sleep 2
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
 i3-msg workspace number 9
+i3-msg 'rename workspace 9 to 9: ide'
 idea &
 sleep 3
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
 i3-msg workspace number 10
+i3-msg 'rename workspace 10 to 10: notes'
 obsidian &
 sleep 2
 i3-msg move workspace to output $samsung_primary_monitor
