@@ -15,4 +15,7 @@ echo "Adding i3status config..."
 mkdir -p ~/.config/i3status/
 cp i3status-config ~/.config/i3status/config
 
+echo "Updating bash prompt..."
+cp .bash_prompt ~/.bash_prompt
+
 echo "Done applying config - reload i3 and your shell to see changes to those."
