@@ -1,0 +1,31 @@
+# Git
+alias gs="git status"
+alias gl="git log"
+alias gl1="git log -1 -p"
+alias gpuom="git push origin master"
+alias gpuco="git push -u origin HEAD"
+alias gplom="git pull origin master"
+alias gplbom="git pull --rebase origin master"
+
+# Apps
+alias androidstudio="~/software/android-studio/bin/studio"
+
+# Misc
+alias ..="cd .."
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias dockerip="docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
+alias editalias="vim ~/.aliases"
+alias ip="node ~/dev/gayl/infra/public-ip/get-public-ipv4-address.mjs"
+alias rl="source ~/.bashrc"
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add color to various commands
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Work-specific
+source ~/dev/gayl/docker/dev/aliases

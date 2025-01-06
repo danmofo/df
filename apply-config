@@ -18,4 +18,17 @@ cp i3status-config ~/.config/i3status/config
 echo "Updating bash prompt..."
 cp .bash_prompt ~/.bash_prompt
 
+echo "Updating .bashrc"
+cp .bashrc ~/.bashrc
+
+echo "Adding exports..."
+cp .exports ~/.exports
+
+echo "Adding aliases..."
+cp .aliases ~/.aliases
+
+echo "Adding vim config..."
+cp -R .vim/ ~
+cp .vimrc ~/.vimrc
+
 echo "Done applying config - reload i3 and your shell to see changes to those."
