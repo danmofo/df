@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# This script copies and applies the config to the current system.
+#
+# It will blindly overwrite anything that's there already, any modifications
+# that have been made to the config outside of this repo will be deleted.
+
+echo "Applying config to system."
+
+echo "Adding i3 config..."
+mkdir -p ~/.config/i3/
+cp i3-config ~/.config/i3/config
+
+echo "Adding i3status config..."
+mkdir -p ~/.config/i3status/
+cp i3status-config ~/.config/i3status/config
+
+echo "Done applying config - reload i3 and your shell to see changes to those."
