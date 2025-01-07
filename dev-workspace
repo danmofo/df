@@ -21,6 +21,13 @@ sleep 2
 i3-msg move workspace to output $dell_second_monitor
 sleep 1
 
+i3-msg workspace number 6
+i3-msg 'rename workspace 6 to 6:db'
+dbeaver-ce &
+sleep 3
+i3-msg move workspace to output $samsung_primary_monitor
+sleep 1
+
 i3-msg workspace number 7
 i3-msg 'rename workspace 7 to 7:terminal'
 /usr/bin/konsole &
