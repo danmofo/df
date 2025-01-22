@@ -13,6 +13,20 @@ set expandtab
 " Add line numbers
 set number
 
+" Enable relative line numbering for easier navigation
+set relativenumber
+
 " Colours / syntax highlighting
 syntax enable
-colorscheme molokai
+colorscheme habamax
+set background=dark
+
+
+set smarttab
+set ai
+set si
+set t_Co=256
+
+set completeopt+=menuone,preview
+set wildmenu
+set wildmode=longest,full

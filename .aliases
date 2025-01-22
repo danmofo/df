@@ -1,4 +1,10 @@
 # Git
+alias ga="git add "
+alias gaa="git add ."
+alias gc="git commit "
+alias gcm="git commit -m "
+alias gd="git diff"
+alias gdh="git diff HEAD"
 alias gs="git status"
 alias gl="git log"
 alias gl1="git log -1 -p"
@@ -29,3 +35,4 @@ alias egrep='egrep --color=auto'
 
 # Work-specific
 source ~/dev/gayl/docker/dev/aliases
+alias start-adb="ADB_MDNS_AUTO_CONNECT=0 adb start-server"
