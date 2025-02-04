@@ -6,3 +6,5 @@ prompt_git() {
 }
 
 PS1='%F{cyan}%n%f @ %F{lightgreen}%~%f $(prompt_git)%f\$ '
+
+setopt prompt_subst

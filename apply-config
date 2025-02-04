@@ -36,8 +36,8 @@ elif [[ "$SHELL" == "/bin/zsh" ]]; then
     echo "Updating zsh prompt..."
     cp .zsh_prompt ~/.zsh_prompt
 
-    echo "Updating .zprofile"
-    cp .zprofile ~/.zprofile
+    echo "Updating .zshrc"
+    cp .zshrc ~/.zshrc
 else
     echo "Non bash/zsh shell, not copying any config"
 fi
