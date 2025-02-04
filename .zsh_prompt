@@ -1,3 +1,22 @@
-PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null); export PS1_CMD1'
+autoload -Uz vcs_info  # Load the vcs_info module for Git information
 
-PS1='(mac) %F{red}%n%f @ %F{magenta}%~%f${PS1_CMD1:+ %F{cyan}[$PS1_CMD1]%f}%f\$ '
+# Configure vcs_info to show the branch name
+zstyle :vcs_info:git:formats "%b"
+zstyle :vcs_info:git:actionformats ""
+
+# Set up the prompt function
+prompt_git() {
+  vcs_info_precmd  # Run vcs_info before each prompt
+
+  local branch="${vcs_info_get_data_git}"
+
+  if [[ -n "$branch" ]]; then
+    echo "($branch)"
+  fi
+}
+
+# Set the prompt
+PS1='%F{red}%n%f @ %F{blue}%~%f $(prompt_git)%f\$ '
+
+# Add vcs_info to precmd so it updates before each prompt
+add-zsh-hook precmd vcs_info_precmd
