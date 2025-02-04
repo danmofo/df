@@ -36,5 +36,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Work-specific
-source ~/dev/gayl/docker/dev/aliases
+if [[ -f ~/dev/gayl/docker/dev/aliases ]]; then
+    source ~/dev/gayl/docker/dev/aliases
+fi
 alias start-adb="ADB_MDNS_AUTO_CONNECT=0 adb start-server"

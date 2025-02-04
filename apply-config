@@ -6,20 +6,41 @@
 # that have been made to the config outside of this repo will be deleted.
 
 echo "Applying config to system."
+echo "SHELL: $SHELL"
 
-echo "Adding i3 config..."
-mkdir -p ~/.config/i3/
-cp i3-config ~/.config/i3/config
+# i3
+if command -v i3 &> /dev/null; then
+    echo "Adding i3 config..."
+    mkdir -p ~/.config/i3/
+    cp i3-config ~/.config/i3/config
 
-echo "Adding i3status config..."
-mkdir -p ~/.config/i3status/
-cp i3status-config ~/.config/i3status/config
+    echo "Adding i3status config..."
+    mkdir -p ~/.config/i3status/
+    cp i3status-config ~/.config/i3status/config
+else
+    echo "i3 not installed, not copying config"
+fi
 
-echo "Updating bash prompt..."
-cp .bash_prompt ~/.bash_prompt
+# Shell
+if [[ "$SHELL" == "/bin/bash" ]]; then
+    echo "Updating bash config"
 
-echo "Updating .bashrc"
-cp .bashrc ~/.bashrc
+    echo "Updating bash prompt..."
+    cp .bash_prompt ~/.bash_prompt
+
+    echo "Updating .bashrc"
+    cp .bashrc ~/.bashrc
+elif [[ "$SHELL" == "/bin/zsh" ]]; then
+    echo "Updating zsh config"
+    
+    echo "Updating zsh prompt..."
+    cp .zsh_prompt ~/.zsh_prompt
+
+    echo "Updating .zprofile"
+    cp .zprofile ~/.zprofile
+else
+    echo "Non bash/zsh shell, not copying any config"
+fi
 
 echo "Adding exports..."
 cp .exports ~/.exports
