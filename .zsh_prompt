@@ -1,22 +1,8 @@
-autoload -Uz vcs_info  # Load the vcs_info module for Git information
-
-# Configure vcs_info to show the branch name
-zstyle :vcs_info:git:formats "%b"
-zstyle :vcs_info:git:actionformats ""
-
-# Set up the prompt function
 prompt_git() {
-  vcs_info_precmd  # Run vcs_info before each prompt
-
-  local branch="${vcs_info_get_data_git}"
-
+  local branch=$(git branch --show-current 2>/dev/null)
   if [[ -n "$branch" ]]; then
     echo "($branch)"
   fi
 }
 
-# Set the prompt
-PS1='%F{red}%n%f @ %F{blue}%~%f $(prompt_git)%f\$ '
-
-# Add vcs_info to precmd so it updates before each prompt
-add-zsh-hook precmd vcs_info_precmd
+PS1='%F{cyan}%n%f @ %F{lightgreen}%~%f $(prompt_git)%f\$ '
