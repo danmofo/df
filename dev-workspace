@@ -7,6 +7,7 @@
 dell_second_monitor="DP-2"
 samsung_primary_monitor="DP-0"
 
+# 1 - Music apps
 i3-msg workspace number 1
 i3-msg 'rename workspace 1 to 1:music'
 spotify &
@@ -14,6 +15,7 @@ sleep 2
 i3-msg move workspace to output $dell_second_monitor
 sleep 1
 
+# 2 - Main web browser
 i3-msg workspace number 2
 i3-msg 'rename workspace 2 to 2:browser'
 google-chrome &
@@ -21,6 +23,7 @@ sleep 2
 i3-msg move workspace to output $dell_second_monitor
 sleep 1
 
+# 3 - Random stuff, depends on what specfic task I'm working on
 i3-msg workspace number 3
 i3-msg 'rename workspace 3 to 3:random'
 /usr/bin/konsole &
@@ -28,7 +31,23 @@ sleep 1
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
+# 4 - Extension development
+i3-msg workspace number 4
+i3-msg 'rename workspace 4 to 4:extension'
+/usr/bin/konsole &
+sleep 1 
+i3-msg move workspace to output $samsung_primary_monitor
+sleep 1
 
+# 5 - Remote SSH connections
+i3-msg workspace number 5
+i3-msg 'rename workspace 5 to 5:remote'
+/usr/bin/konsole &
+sleep 1 
+i3-msg move workspace to output $samsung_primary_monitor
+sleep 1
+
+# 6 - Database client
 i3-msg workspace number 6
 i3-msg 'rename workspace 6 to 6:db'
 dbeaver-ce &
@@ -36,6 +55,7 @@ sleep 5 # DBeaver takes a long time to start
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
+# 7 - Main dev terminals
 i3-msg workspace number 7
 i3-msg 'rename workspace 7 to 7:terminal'
 /usr/bin/konsole &
@@ -43,6 +63,7 @@ sleep 2
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
+# 8 - Text editors
 i3-msg workspace number 8
 i3-msg 'rename workspace 8 to 8:text editor'
 code &
@@ -50,6 +71,7 @@ sleep 2
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
+# 9 - Java IDE
 i3-msg workspace number 9
 i3-msg 'rename workspace 9 to 9:ide'
 idea &
@@ -57,6 +79,7 @@ sleep 3
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
+# 10 - Notes
 i3-msg workspace number 10
 i3-msg 'rename workspace 10 to 10:notes'
 obsidian &
