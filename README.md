@@ -12,10 +12,7 @@ The macOS configs are very minimal at the moment as I figure out a decent workfl
 
 ## Keyboard remappings
 
-I use a Kinesis Advantage 2 keyboard (Windows layout) with the following keys swapped:
-- Caps Lock -> Escape
-- Up arrow -> Down arrow
-- Delete -> Left Alt - this is the i3 mod key.
+I use a Kinesis Advantage 2 keyboard - the mappings can be found in `qwerty.txt`
 
 ## TODO
 - Add a full list of software that's installed on each OS so it's easier to recreate envrionment after a full reinstall
