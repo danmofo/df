@@ -51,7 +51,7 @@ sleep 1
 i3-msg workspace number 6
 i3-msg 'rename workspace 6 to 6:db'
 dbeaver-ce &
-sleep 5 # DBeaver takes a long time to start
+sleep 8 # DBeaver takes a long time to start
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
 
