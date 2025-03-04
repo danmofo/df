@@ -14,6 +14,7 @@ Currently I'm not using any software to provide window management and have done 
 - Created 10 desktops to mimic workspaces
 - Manually moved each app into the same workspace as they would be on Linux
 - Rebound "Move to desktop N" to Alt+N to match i3
+- Disabled "Automatically rearrange Spaces based on most recent use" - why is this a feature?
 
 Everything else is still done manually...
 
