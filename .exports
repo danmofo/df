@@ -3,6 +3,9 @@
 # vim as default
 export EDITOR="vim"
 
+# Make Konsole the default in i3
+export TERMINAL="/usr/bin/konsole"
+
 # Don't clear the screen after quitting a manual page
 export MANPAGER="less -X"
 

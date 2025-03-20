@@ -60,4 +60,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # deno
-. "$HOME/.deno/env"
+[[ -s "$HOME/.deno/env" ]] && . "$HOME/.deno/env"
