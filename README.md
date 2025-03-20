@@ -1,11 +1,17 @@
 This repository contains my dotfiles/configs for Linux/macOS.
 
-Run `./apply-config` to copy the config to the system. If you're on Linux, then `dev-workspace` to begin working - this won't work on macOS.
+Run `./apply-config` to copy the config to the system. 
+
+If you're on Linux:
+- On main computer, `dev-workspace`
+- On work laptop, `dev-laptop`
+
+If you're on macOS, there's no dev script, everything is opened manually - just never shut your computer off :)
 
 ## Linux
 
 - DE, KDE Plasma 5.27.11
-- WM, i3
+- WM, i3 4.24 (config won't work otherwise)
 
 ## macOS
 The macOS configs are very minimal at the moment as I figure out a decent workflow, which is quite difficult when the smart people at Apple decided to use a meta key instead of CTRL that's used on Linux/Windows.
