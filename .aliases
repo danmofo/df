@@ -18,6 +18,7 @@ alias gplbom="git pull --rebase origin master"
 
 # Apps
 alias androidstudio="~/software/android-studio/bin/studio"
+alias bruno="flatpak run com.usebruno.Bruno &"
 
 # Misc
 alias ..="cd .."
