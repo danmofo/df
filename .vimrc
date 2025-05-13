@@ -21,12 +21,17 @@ syntax enable
 colorscheme habamax
 set background=dark
 
-
-set smarttab
-set ai
+" Smart indentation
 set si
+
+" Tell Vim how many colours the terminal supports
 set t_Co=256
 
+" Enhance completion features
+" - menuone - display the completion menu even if there's only one match
+" - preview - show preview window for selected option
 set completeopt+=menuone,preview
+
+" Enhanced command-line completion
 set wildmenu
 set wildmode=longest,full
