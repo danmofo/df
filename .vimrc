@@ -1,3 +1,17 @@
+""" Leader ------------------------------------
+let mapleader=" "
+
+""" Settings ----------------------------------
+
+" Enable incremental search
+set incsearch
+
+" Show N lines above/below the cursor at all times
+set so=5
+
+" Show the mode we're in
+set showmode
+
 " Set the width of tabs to be 4 spaces
 set tabstop=4
 
@@ -35,3 +49,6 @@ set completeopt+=menuone,preview
 " Enhanced command-line completion
 set wildmenu
 set wildmode=longest,full
+
+
+""" Mappings -----------------------------------

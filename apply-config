@@ -51,5 +51,6 @@ cp .aliases ~/.aliases
 echo "Adding vim config..."
 cp -R .vim/ ~
 cp .vimrc ~/.vimrc
+cp .ideavimrc ~/.ideavimrc
 
 echo "Done applying config - reload i3 and your shell to see changes to those."

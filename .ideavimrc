@@ -1,0 +1,38 @@
+""" -------------------------------------------
+""" IntelliJ IDEA vim plugin settings
+""" -------------------------------------------
+
+""" Leader ------------------------------------
+let mapleader=" "
+
+""" Settings ----------------------------------
+
+" Enable incremental search
+set incsearch
+
+" Show N lines above/below the cursor at all times
+set so=5
+
+" Show the mode we're in
+set showmode
+
+" Add line numbers
+set number
+
+" Enable relative line numbering for easier navigation
+set relativenumber
+
+""" Mappings ---------------------------------
+""" List of actions: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
