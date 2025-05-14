@@ -23,11 +23,12 @@ set number
 set relativenumber
 
 """ Mappings ---------------------------------
-""" List of actions: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
+" List of actions: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
 map <leader>d <Action>(Debug)
 map <leader>r <Action>(RenameElement)
 map <leader>c <Action>(Stop)
 map <leader>z <Action>(ToggleDistractionFreeMode)
+map <leader>f <Action>(ReformatCode)
 
 map <leader>s <Action>(SelectInProjectView)
 map <leader>a <Action>(Annotate)
@@ -36,3 +37,6 @@ map <S-Space> <Action>(GotoNextError)
 
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
