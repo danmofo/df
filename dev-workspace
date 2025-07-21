@@ -4,8 +4,8 @@
 # The sleep commands are needed to ensure programs are opened correctly before changing
 # workspaces, they can probably be lowered.
 
-dell_second_monitor="DP-2"
-samsung_primary_monitor="DP-0"
+dell_second_monitor="DP-4"
+samsung_primary_monitor="DP-2"
 
 # 1 - Music apps
 i3-msg workspace number 1

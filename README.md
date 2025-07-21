@@ -32,3 +32,4 @@ I use a Kinesis Advantage 2 keyboard - the mappings can be found in `qwerty.txt`
 - Add a full list of software that's installed on each OS so it's easier to recreate envrionment after a full reinstall
 - Install Obsidian as a package so it can be opened the same way as my main computer
 - Change main computer to use pure i3 instead of this bastardised KDE plasma with i3
+- Write instructions for using nerd-dictation

@@ -45,3 +45,7 @@ if [[ -f ~/dev/gayl/docker/dev/aliases ]]; then
     source ~/dev/gayl/docker/dev/aliases
 fi
 alias start-adb="ADB_MDNS_AUTO_CONNECT=0 adb start-server"
+alias 11="cd ~/dev/gayl"
+alias 22="cd ~/dev/appserver"
+alias 33="cd ~/dev/tap-to-pay-app-mobile"
+alias 44="cd ~/dev/donation-reminder"
