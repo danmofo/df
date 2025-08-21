@@ -2,11 +2,14 @@ This repository contains my dotfiles/configs for Linux/macOS.
 
 Run `./apply-config` to copy the config to the system. 
 
+## Starting workspaces
+
 If you're on Linux:
 - On main computer, `dev-workspace`
 - On work laptop, `dev-laptop`
 
-If you're on macOS, there's no dev script, everything is opened manually - just never shut your computer off :)
+If you're on macOS: 
+- There's no dev script, everything is opened manually - just never shut your computer off :)
 
 ## Linux
 
@@ -14,19 +17,21 @@ If you're on macOS, there's no dev script, everything is opened manually - just 
 - WM, i3 4.24 (config won't work otherwise)
 
 ## macOS
-The macOS configs are very minimal at the moment as I figure out a decent workflow, which is quite difficult when the smart people at Apple decided to use a meta key instead of CTRL that's used on Linux/Windows.
 
-Currently I'm not using any software to provide window management and have done the following:
-- Created 10 desktops to mimic workspaces
-- Manually moved each app into the same workspace as they would be on Linux
-- Rebound "Move to desktop N" to Alt+N to match i3
+- WM, AeroSpace 0.19.2-Beta
+
+I also did the following so the WM works properly:
 - Disabled "Automatically rearrange Spaces based on most recent use" - why is this a feature?
+- Removed any shortcuts inside "Settings > Keyboard > Keyboard Shortcuts > Mission Control" which intefere with i3 keybindings. I'm not sure if these were added by me or default - note for my future self..
 
-Everything else is still done manually...
+## Keyboards
 
-## Keyboard remappings
-
-I use a Kinesis Advantage 2 keyboard - the mappings can be found in `qwerty.txt`
+- Kinesis Advantage 2 keyboard - mappings can be found in `qwerty.txt`. They are stored on the keyboard itself, this is just a backup.
+- For macOS I use a foot pedal with the following tweaks (exact process I don't remember):
+    - Foot pedal outputs an 'a' character - not sure on whether that's when pressed or both pressed and on release
+    - Karabiner Elements maps 'a' character on foot pedal to 'left_command'
+    - You can then hold the foot pedal down to emulate pressing CMD - this means you don't have to use the awkward Alt Gr -> Command mapping on the KA2.
+    - There may have been other things that I did to get this working, possibly something to do with virtual keyboards.
 
 ## TODO
 - Add a full list of software that's installed on each OS so it's easier to recreate envrionment after a full reinstall
