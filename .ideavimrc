@@ -32,11 +32,16 @@ map <leader>f <Action>(ReformatCode)
 
 map <leader>s <Action>(SelectInProjectView)
 map <leader>a <Action>(Annotate)
-map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
 map <S-Space> <Action>(GotoNextError)
 
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
+
+" Force certain keybinds to be handled by the IDE
+sethandler <C-C> a:ide " Copy
+sethandler <C-V> a:ide " Paste
+sethandler <C-D> a:ide " Select next occurence of selection
+sethandler <C-W> a:ide " Outwardly select within context
 
 " Don't use Ex mode, use Q for formatting.
 map Q gq
