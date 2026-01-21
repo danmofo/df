@@ -4,7 +4,7 @@
 # The sleep commands are needed to ensure programs are opened correctly before changing
 # workspaces, they can probably be lowered.
 
-samsung_primary_monitor="DP-0"
+samsung_primary_monitor="HDMI-0"
 dell_second_monitor="DP-2"
 
 # 1 - Music apps

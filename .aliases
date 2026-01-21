@@ -30,10 +30,12 @@ alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock do
 alias dockerip="docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}'"
 alias editalias="vim ~/dev/df/.aliases"
 alias ip="node ~/dev/gayl/infra/public-ip/get-public-ipv4-address.mjs"
-alias rl="source ~/.bashrc"
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# Sync Obsidian notes
+alias nn="git commit -am 'notes' && git push origin master"
+alias rl="source ~/.bashrc"
 
 # Add color to various commands
 alias ls='ls --color=auto'
@@ -50,6 +52,7 @@ alias 11="cd ~/dev/gayl"
 alias 22="cd ~/dev/appserver"
 alias 33="cd ~/dev/tap-to-pay-app-mobile"
 alias 44="cd ~/dev/donation-reminder"
+alias 55="cd ~/dev/dans-vault"
 alias start_ngrok="ngrok http --domain gayl-donate-dan.ngrok.io localhost:8080"
 alias tws="timew start "
 alias twss="timew stop"
