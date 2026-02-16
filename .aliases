@@ -16,6 +16,9 @@ alias gpuom="git push origin master"
 alias gpuco="git push -u origin HEAD"
 alias gplom="git pull origin master"
 alias gplbom="git pull --rebase origin master"
+alias prr="gh pr view --web"
+alias grr="gh repo view --web"
+alias 99="cd ~/dev/df/"
 
 # Apps
 alias androidstudio="~/software/android-studio/bin/studio"
