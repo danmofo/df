@@ -59,3 +59,5 @@ alias 55="cd ~/dev/dans-vault"
 alias start_ngrok="ngrok http --domain gayl-donate-dan.ngrok.io localhost:8080"
 alias tws="timew start "
 alias twss="timew stop"
+
+alias laptopbattery="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
