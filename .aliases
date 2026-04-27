@@ -58,7 +58,6 @@ alias 33="cd ~/dev/tap-to-pay-app-mobile"
 alias 44="cd ~/dev/donation-reminder"
 alias 55="cd ~/dev/dans-vault"
 alias start_ngrok="ngrok http --domain gayl-donate-dan.ngrok.io localhost:8080"
-alias tws="timew start "
-alias twss="timew stop"
+alias work="es6 build && rbcc"
 
 alias laptopbattery="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
