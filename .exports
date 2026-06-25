@@ -27,3 +27,7 @@ export PATH="$PATH:$HOME/dev/scripts"
 
 # Neovim
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
+# Software
+export PATH="$PATH:$HOME/software"
+
