@@ -19,6 +19,7 @@ alias gplom="git pull origin master"
 alias gplbom="git pull --rebase origin master"
 alias prr="gh pr view --web"
 alias grr="gh repo view --web"
+alias 66="cd ~/dev/ai/"
 alias 99="cd ~/dev/df/"
 
 # Apps
