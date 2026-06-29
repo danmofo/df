@@ -50,6 +50,10 @@ source ~/.bash_prompt
 source ~/.exports
 source ~/.aliases
 
+if [[ -f "$HOME/dev/ai/work/.aliases" ]]; then
+    source $HOME/dev/ai/work/.aliases
+fi
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
