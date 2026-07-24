@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+app_name="$1"
+if [[ "$app_name" == "" ]]; then
+    app_name="example"
+fi
+
+package_name="$2"
+if [[ "$package_name" == "" ]]; then
+    package_name="com.dmoffat"
+fi
+
+output_dir="$3"
+if [[ "$output_dir" == "" ]]; then
+    output_dir="$(pwd)"
+fi
+
+echo "Creating Maven project '$app_name' in directory '$output_dir'"
+
+mvnd archetype:generate \
+    -DgroupId=$package_name \
+    -DartifactId=$app_name \
+    -DarchetypeArtifactId=maven-archetype-quickstart \
+    -DarchetypeVersion=1.5 \
+    -DinteractiveMode=false \
+    -DjavaCompilerVersion=25 \
+    -DoutputDirectory=$output_dir
+
