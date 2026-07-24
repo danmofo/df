@@ -22,6 +22,7 @@ alias prr="gh pr view --web"
 alias grr="gh repo view --web"
 alias 66="cd ~/dev/ai/"
 alias 99="cd ~/dev/df/"
+alias wt="worktree "
 
 # Apps
 alias androidstudio="~/software/android-studio/bin/studio"
@@ -59,6 +60,8 @@ alias 22="cd ~/dev/appserver"
 alias 33="cd ~/dev/tap-to-pay-app-mobile"
 alias 44="cd ~/dev/donation-reminder"
 alias 55="cd ~/dev/dans-vault"
+alias 77="cd ~/dev/worktrees/gayl"
+alias 88="cd ~/dev/worktrees/appserver"
 alias start_ngrok="ngrok http --domain gayl-donate-dan.ngrok.io localhost:8080"
 alias work="es6 build && rbcc"
 
