@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Run this from the root of the repo/work tree
+
+export REPO_DIR="$(pwd)"
+
+# Critical stuff
+./test-runner "@CriticalTestCategory"
+
+if [[ "$?" != "0" ]]; then
+    echo "Critical tests failed, see above."
+    exit 1
+fi
+
+# APIs
+./test-runner "com.everyclick.taptopay.**,com.everyclick.donationreminder.**"
+
+if [[ "$?" != "0" ]]; then
+    echo "TTD/DR app tests failed, see above."
+    exit 1
+fi
