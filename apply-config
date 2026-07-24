@@ -63,4 +63,8 @@ cp -R .vim/ ~
 cp .vimrc ~/.vimrc
 cp .ideavimrc ~/.ideavimrc
 
+echo "Adding custom scripts..."
+mkdir -p ~/dev/scripts
+cp -a ~/dev/df/scripts/. ~/dev/scripts/
+
 echo "Done applying config - reload i3 and your shell to see changes to those."
