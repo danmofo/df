@@ -8,7 +8,7 @@ export REPO_DIR="$(pwd)"
 ./test-runner "@CriticalTestCategory"
 
 if [[ "$?" != "0" ]]; then
-    echo "Critical tests failed, see above."
+    echo "Critical tests failed with exit code $?, see above."
     exit 1
 fi
 
@@ -16,6 +16,6 @@ fi
 ./test-runner "com.everyclick.taptopay.**,com.everyclick.donationreminder.**"
 
 if [[ "$?" != "0" ]]; then
-    echo "TTD/DR app tests failed, see above."
+    echo "TTD/DR app tests failed with exit code $?, see above."
     exit 1
 fi
