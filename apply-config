@@ -8,6 +8,13 @@
 echo "Applying config to system."
 echo "SHELL: $SHELL"
 
+# Terminal (Linux only)
+if command -v ghostty &> /dev/null; then
+    echo "Adding ghostty config"
+    mkdir -p ~/.config/ghostty/
+    cp ghostty.config ~/.config/ghostty/config.ghostty
+fi
+
 # i3 (Linux)
 if command -v i3 &> /dev/null; then
     echo "Adding i3 config..."
