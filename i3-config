@@ -205,3 +205,6 @@ exec --no-startup-id feh --bg-scale /usr/share/wallpapers/Next/contents/images/2
 # Stop the mouse focusing windows
 focus_follows_mouse no
 
+# Screenshots
+for_window [class="spectacle"] floating enable
+
