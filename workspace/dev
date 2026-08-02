@@ -6,6 +6,7 @@
 
 samsung_primary_monitor="HDMI-0"
 dell_second_monitor="DP-2"
+terminal="/usr/bin/ghostty"
 
 # 1 - Music apps
 i3-msg workspace number 1
@@ -26,7 +27,7 @@ sleep 1
 # 3 - Random stuff, depends on what specfic task I'm working on
 i3-msg workspace number 3
 i3-msg 'rename workspace 3 to 3:random'
-/usr/bin/konsole &
+$terminal &
 sleep 1 
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
@@ -34,7 +35,7 @@ sleep 1
 # 4 - Extension development
 i3-msg workspace number 4
 i3-msg 'rename workspace 4 to 4:extension'
-/usr/bin/konsole &
+$terminal &
 sleep 1 
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
@@ -42,7 +43,7 @@ sleep 1
 # 5 - Remote SSH connections
 i3-msg workspace number 5
 i3-msg 'rename workspace 5 to 5:remote'
-/usr/bin/konsole &
+$terminal &
 sleep 1 
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
@@ -58,7 +59,7 @@ sleep 1
 # 7 - Main dev terminals
 i3-msg workspace number 7
 i3-msg 'rename workspace 7 to 7:terminal'
-/usr/bin/konsole &
+$terminal &
 sleep 2
 i3-msg move workspace to output $samsung_primary_monitor
 sleep 1
