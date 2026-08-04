@@ -38,3 +38,4 @@ I also did the following so the WM works properly:
 - Install Obsidian as a package so it can be opened the same way as my main computer
 - Change main computer to use pure i3 instead of this bastardised KDE plasma with i3
 - Write instructions for using nerd-dictation
+- Copy `.profile`
