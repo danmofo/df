@@ -19,10 +19,16 @@ font pango:Noto Mono, monospace 10
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# 1. Give systemd access to your display variables
+# 2. Start the Ghostty daemon now that systemd knows where the screen is
+exec --no-startup-id systemctl --user import-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
+exec --no-startup-id systemctl --user start app-com.mitchellh.ghostty.service
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# Start Lxpolkit - manages password GUI prompts
 exec --no-startup-id lxpolkit
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
