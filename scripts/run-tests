@@ -21,7 +21,7 @@ if [[ "$?" != "0" ]]; then
 fi
 
 # Elasticsearch
-$REPO_DIR/test/java/test-es
+./test/java/test-es
 if [[ "$?" != "0" ]]; then
     echo "Elasticsearch tests failed with exit code $?, see above."
     exit 1
