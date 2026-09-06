@@ -48,6 +48,9 @@ alias rl="source ~/.bashrc"
 alias mountwin="sudo mount /dev/nvme0n1p3 /mnt/windows/"
 alias umountwin="sudo umount /mnt/windows"
 
+# Remote server
+alias ddd="ssh -i ~/.ssh/do_dmoffat.com dmoffat.com -p 9999"
+
 # Add color to various commands
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
