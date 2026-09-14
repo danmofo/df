@@ -71,5 +71,7 @@ alias 77="cd ~/dev/worktrees/gayl"
 alias 88="cd ~/dev/worktrees/appserver"
 alias start_ngrok="ngrok http --domain gayl-donate-dan.ngrok.io localhost:8080"
 alias work="es6 build && rbcc"
+alias proddb="~/dev/gayl/infra/db/remote/create-rds-tunnel prod"
+alias testdb="~/dev/gayl/infra/db/remote/create-rds-tunnel test"
 
 alias laptopbattery="upower -i /org/freedesktop/UPower/devices/battery_BAT1"
