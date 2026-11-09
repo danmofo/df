@@ -26,3 +26,11 @@ if [[ "$?" != "0" ]]; then
     echo "Elasticsearch tests failed with exit code $?, see above."
     exit 1
 fi
+
+# Circular dep detection
+./docker/dev/check-for-circular-deps
+
+if [[ "$?" != "0" ]]; then
+    echo "Circular deps detected, see above."
+    exit 1
+fi
