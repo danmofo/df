@@ -26,6 +26,7 @@ Found using `snap list | grep -vE 'base|core|bare|gnome|gtk|mesa|snapd|theme|fir
 
 # `apt`
 Found using `apt-mark showmanual` - these are just the ones I can pick out as being manually installed, some of them require custom apt repos to be added.
+- autocutcel
 - cloc
 - code
 - curl
