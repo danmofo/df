@@ -6,7 +6,7 @@ normal = { family = "Noto Mono" }
 style = { shape = "Block", blinking = "Never" }
 
 # Ensure .profile gets loaded
-[shell]
+[terminal.shell]
 program = "bash"
 args = ["--login"]
 
