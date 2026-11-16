@@ -20,9 +20,7 @@ font pango:Noto Mono, monospace 10
 #font pango:DejaVu Sans Mono 8
 
 # 1. Give systemd access to your display variables
-# 2. Start the Ghostty daemon now that systemd knows where the screen is
 exec --no-startup-id systemctl --user import-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
-exec --no-startup-id systemctl --user start app-com.mitchellh.ghostty.service
 
 # Automatically track and buffer X11 selections
 # Prevents stupid/annoying bugs that I don't understand where Chrome's right-click menu
@@ -63,7 +61,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec /usr/bin/ghostty --gtk-single-instance=true
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -210,6 +208,9 @@ for_window [class="Plasmoidviewer"] floating enable; border none
 for_window [class="(?i)*nextcloud*"] floating disable
 for_window [class="plasmashell" window_type="notification"] border none, move position 70 ppt 81 ppt
 no_focus [class="plasmashell" window_type="notification"]
+
+# Remove headers from programs
+for_window [class="Alacritty"] border pixel 1
 
 # Set a desktop background
 exec --no-startup-id feh --bg-scale /usr/share/wallpapers/Next/contents/images/2560x1440.png

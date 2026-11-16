@@ -1,0 +1,18 @@
+[font]
+size = 9
+normal = { family = "Noto Mono" }
+
+[cursor]
+style = { shape = "Block", blinking = "Never" }
+
+# Ensure .profile gets loaded
+[shell]
+program = "bash"
+args = ["--login"]
+
+[keyboard]
+bindings = [
+  # Clear scrollback and screen
+  { key = "K", mods = "Control|Shift", action = "ClearHistory" },
+  { key = "K", mods = "Control|Shift", chars = "\f" },
+]

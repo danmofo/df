@@ -9,6 +9,12 @@ echo "Applying config to system."
 echo "SHELL: $SHELL"
 
 # Terminal (Linux only)
+if command -v alacritty &> /dev/null; then
+    echo "Adding alacritty config"
+    mkdir -p ~/.config/alacritty/
+    cp alacritty.toml ~/.config/alacritty/alacritty.toml
+fi
+
 if command -v ghostty &> /dev/null; then
     echo "Adding ghostty config"
     mkdir -p ~/.config/ghostty/
